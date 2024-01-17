@@ -1,0 +1,113 @@
+103: history = user.session_histories.create(session: session)
+102: history = user.session_histories.create(session: session)
+101: exercise.sensor
+100: user.session_histories
+     session.session_history
+99: user.session_histories
+    session.session_history
+98: history = user.session_histories.create(session: session)
+97: sensor = exercise.create_sensor(distance: 100.0, speed: 5.0, time: 20)
+96: sensor = exercise.sensor.create(distance: 100.0, speed: 5.0, time: 20)
+95: sensor = exercise.sensor.create(distance: 100.0, speed: 5.0, time: 20)
+94: sensor = exercise.sensors.create(distance: 100.0, speed: 5.0, time: 20)
+93: exercise
+92: exer
+91: sensors
+90: sensor
+89: user.sessions.exercises each do |s|
+      puts s.sensors
+    ...
+88: user.sessions.exercise.sensor each do |s|
+      puts s.exercises
+    ...
+87: user.sessions.each do |s|
+      puts s.exercises
+    ...
+86: user.session_histories
+    session.session_history
+85: history = user.session_histories.create(session: session)
+84: history = user.session_histories.create(session: session)
+83: Sensor.all
+82: sensor.all
+81: sensor
+80: exercise.sensor
+79: sensor = exercise.sensors.create(distance: 100.0, speed: 5.0, time: 20.minutes)
+78: session.exercises
+77: exercise = session.exercises.create(machine: "Treadmill", duration: 30.minutes, weight: 0, repetition: 0, serie: 1)
+76: user.sessions
+75: session = user.sessions.create(timestamp: Time.now)
+74: user = User.create(name: "Test User", age: 30, weight: 70, height: 175, level: "beginner", objective: "fitness")
+73: quit
+72: User.first.avatar
+71: User.first
+70: quit
+69: current_user
+68: quit
+67: super
+66: user
+65: @user
+64: quit
+63: User.all
+62: quit
+61: rails s
+60: User.all
+59: quit
+58: User.all
+57: quit
+56: User.all
+55: User.last.destroy!
+54: User.first.destroy!
+53: quit
+52: User.all
+51: User.last.destroy!
+50: User.all
+49: User.count
+48: User.cont
+47: User.first.destroy!
+46: User.first
+45: quit
+44: User.first
+43: exit
+42: curl
+41: exit
+40: Rails.cache.clear
+39: exit
+38: Product.all
+37: Category.all
+36: Categories.all
+35: product.all
+34: quit
+33: Category.all
+32: Product.all
+31: exit
+30: Product.all
+29: Products.all
+28: quit
+27: exit
+26: Products.all
+25: Product.all
+24: Category.all
+23: Categories.all
+22: exit
+21: exit
+20: PixKey.all
+19: PixKey
+18: exit
+17: pixkey
+16: PixKey
+15: exit
+14: PixKey
+13: PixKey.new
+12: exit
+11: PixKey.new()
+10: PixKey.new
+9: exit
+8: PixKey.new
+7: PixKey
+6: quit
+5: PixKey.new
+4: pix_key?
+3: pix_key
+2: pixkey
+1: Tasks.new(:title 
+0: Tasks.all
