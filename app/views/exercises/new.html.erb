@@ -1,2 +1,6 @@
-<h1>Exercises#new</h1>
+<h1>New Exercise for Session <%= @session.id %></h1>
+
+<%= render 'form' %>
+<%= link_to 'Back to Exercises', session_exercises_path(@session) %>
+
 <p>Find me in app/views/exercises/new.html.erb</p>

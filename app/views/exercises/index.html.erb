@@ -1,2 +1,28 @@
-<h1>Exercises#index</h1>
+<h1>Exercises for Session <%= @session.id %></h1>
+
+<%= link_to 'New Exercise', new_user_session_exercise_path(@user, @session) %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Machine</th>
+      <th>Duration</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @exercises.each do |exercise| %>
+      <tr>
+        <td><%= exercise.machine %></td>
+        <td><%= exercise.duration %></td>
+        <td>
+          <%= link_to 'Show', user_session_exercise_path(@user, @session, exercise) %>
+          <%= link_to 'Edit', edit_user_session_exercise_path(@user, @session, exercise) %>
+          <%= link_to 'Destroy', user_session_exercise_path(@user, @session, exercise), method: :delete, data: { confirm: 'Are you sure?' } %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
 <p>Find me in app/views/exercises/index.html.erb</p>

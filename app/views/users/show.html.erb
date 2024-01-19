@@ -1,2 +1,39 @@
 <h1>Users#show</h1>
+
+<h1><%= @user.name %></h1>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @user.age %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @user.weight %>
+</p>
+
+<p>
+  <strong>Height:</strong>
+  <%= @user.height %>
+</p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @user.level %>
+</p>
+
+<p>
+  <strong>Objective:</strong>
+  <%= @user.objective %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user), class: "btn" %> |
+<%= link_to 'Back to Users', users_path, class: "btn" %>
+<%= link_to "View Sessions", user_sessions_path(@user), class: "btn" %>
+
 <p>Find me in app/views/users/show.html.erb</p>

@@ -19,7 +19,13 @@ class SensorsController < ApplicationController
 
   def set_sensor
     @sensor = Sensor.find_by(id: params[:id])
-    redirect_to(user_session_exercise_path(@user, @session, @exercise), alert: "Sensor not found.") if @sensor.nil?
+    if @sensor
+      @exercise = @sensor.exercise
+      @session = @exercise.session
+      @user = @session.user
+    else
+      redirect_to(user_session_exercise_path(@user, @session, @exercise), alert: "Sensor not found.")
+    end
   end
 
 end

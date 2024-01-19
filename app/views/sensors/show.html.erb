@@ -1,2 +1,21 @@
-<h1>Sensors#show</h1>
+<h1>Sensor Details</h1>
+
+<p>
+  <strong>Distance:</strong>
+  <%= @sensor.distance %>
+</p>
+
+<p>
+  <strong>Speed:</strong>
+  <%= @sensor.speed %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @sensor.time %>
+</p>
+
+<%= link_to 'Edit Sensor', edit_user_session_exercise_sensor_path(@user, @session, @exercise, @sensor), class: "btn" %> |
+<%= link_to 'Back to Exercise', user_session_exercise_path(@user, @session, @exercise), class: "btn" %>
+
 <p>Find me in app/views/sensors/show.html.erb</p>

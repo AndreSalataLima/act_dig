@@ -1,2 +1,32 @@
-<h1>Exercises#show</h1>
+<h1>Exercise Details</h1>
+
+<p>
+  <strong>Machine:</strong>
+  <%= @exercise.machine %>
+</p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @exercise.duration %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @exercise.weight %>
+</p>
+
+<p>
+  <strong>Repetition:</strong>
+  <%= @exercise.repetition %>
+</p>
+
+<p>
+  <strong>Serie:</strong>
+  <%= @exercise.serie %>
+</p>
+
+<%= link_to 'Edit', edit_user_session_exercise_path(@user, @session, @exercise), class: "btn" %> |
+<%= link_to 'Back to Exercises', user_session_exercises_path(@user, @session), class: "btn" %>
+<%= link_to 'View Exercises', user_session_exercise_sensor_path(@user, @session, @exercise), class: "btn" %>
+
 <p>Find me in app/views/exercises/show.html.erb</p>

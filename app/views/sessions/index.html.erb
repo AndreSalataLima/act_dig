@@ -1,2 +1,25 @@
-<h1>Sessions#index</h1>
+<h1>Sessions for <%= @user.name %></h1>
+<%= link_to 'New Session', new_user_session_path(@user) %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Timestamp</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @sessions.each do |session| %>
+      <tr>
+        <td><%= session.timestamp %></td>
+        <td>
+          <%= link_to 'Show', user_session_path(@user, session) %>
+          <%= link_to 'Edit', edit_user_session_path(@user, session) %>
+          <%= link_to 'Destroy', user_session_path(@user, session), method: :delete, data: { confirm: 'Are you sure?' } %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
 <p>Find me in app/views/sessions/index.html.erb</p>

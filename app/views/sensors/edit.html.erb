@@ -1,2 +1,54 @@
-<h1>Sensors#edit</h1>
+<h1>Edit Sensor</h1>
+
+<%= form_with(model: [@user, @session, @exercise, @sensor], local: true) do |form| %>
+  <% if @sensor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@sensor.errors.count, "error") %> prohibited this sensor from being saved:</h2>
+      <ul>
+        <% @sensor.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= form_with(model: [@user, @session, @exercise, @sensor], local: true) do |form| %>
+  <% if @sensor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@sensor.errors.count, "error") %> prohibited this sensor from being saved:</h2>
+      <ul>
+        <% @sensor.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :distance %>
+    <%= form.number_field :distance, step: :any %>
+  </div>
+
+  <div class="field">
+    <%= form.label :speed %>
+    <%= form.number_field :speed, step: :any %>
+  </div>
+
+  <div class="field">
+    <%= form.label :time %>
+    <%= form.datetime_select :time %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+
+<%= link_to 'Back to Exercise', user_session_exercise_path(@user, @session, @exercise) %>
+
 <p>Find me in app/views/sensors/edit.html.erb</p>

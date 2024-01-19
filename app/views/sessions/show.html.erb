@@ -1,2 +1,13 @@
-<h1>Sessions#show</h1>
+<h1>Session Details</h1>
+
+<p>
+  <strong>Timestamp:</strong>
+  <%= @session.timestamp %>
+</p>
+
+<%= link_to 'Edit', edit_user_session_path(@user, @session), class: "btn" %> |
+<%= link_to 'Back to Sessions', user_sessions_path(@user), class: "btn" %>
+<%= link_to 'View Exercises', user_session_exercises_path(@user, @session), class: "btn" %>
+
+
 <p>Find me in app/views/sessions/show.html.erb</p>

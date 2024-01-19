@@ -53,6 +53,7 @@ class ExercisesController < ApplicationController
 
   def set_session
     @session = Session.find(params[:session_id])
+    @user = @session.user
   end
 
 end
