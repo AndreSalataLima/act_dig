@@ -43,7 +43,7 @@ Include quotes, results, and a before-and-after scenario to showcase the impact.
                 <li><a href="#services">Products & Services</a></li>
                 <li><a href="#partners">Partners</a></li>
                 <li><a href="#careers">Careers</a></li>
-                <%= link_to 'View Users', users_path %>
+                <li><%= link_to 'View Users', users_path %></li>
             </ul>
         </nav>
     </header>
@@ -70,11 +70,34 @@ Include quotes, results, and a before-and-after scenario to showcase the impact.
         <div class="cards">
             <!-- Card 1: Rapid Installation -->
             <div class="card">
-                <img src="rapid-installation.png" alt="Rapid Installation">
+                <%= image_tag 'rapid-installation.png', alt: 'Rapid Installation' %>
                 <h3>Rapid Installation</h3>
-                <p>Effortless set-up - Our sensors are designed for quick...</p>
+                <p>Effortless set-up - Our sensors are designed for quick, hassle-free installation on any gym equipment.</p>
             </div>
-            <!-- Additional cards... -->
+            <!-- Card 2: Real-Time Performance Tracking -->
+            <div class="card">
+                <%= image_tag 'real-time-performance-tracking.png', alt: 'Real-Time Performance Tracking' %>
+                <h3>Real-Time Performance Tracking</h3>
+                <p>Monitor your progress in real-time with precise metrics like speed, strength, and endurance.</p>
+            </div>
+            <!-- Card 3: Advanced Data Analytics -->
+            <div class="card">
+                <%= image_tag 'advanced-data-analytics.png', alt: 'Advanced Data Analytics' %>
+                <h3>Advanced Data Analytics</h3>
+                <p>Unlock your potential with detailed analytics, providing insights into workout efficiency and improvement areas.</p>
+            </div>
+            <!-- Card 4: Customizable Workout Plans -->
+            <div class="card">
+                <%= image_tag 'customizable-workout-plans.png', alt: 'Customizable Workout Plans' %>
+                <h3>Customizable Workout Plans</h3>
+                <p>Personalize your training with data-driven workout plans tailored to your fitness goals.</p>
+            </div>
+            <!-- Card 5: Community Challenges and Leaderboards -->
+            <div class="card">
+                <%= image_tag 'community-challenges-leaderboards.png', alt: 'Community Challenges and Leaderboards' %>
+                <h3>Community Challenges and Leaderboards</h3>
+                <p>Stay motivated by joining community challenges and climbing up the leaderboards.</p>
+            </div>
         </div>
     </section>
 
@@ -86,9 +109,18 @@ Include quotes, results, and a before-and-after scenario to showcase the impact.
             <!-- Step 1: Installation -->
             <div class="step">
                 <img src="installation-step.png" alt="Installation">
-                <p>We equip your gym with our state-of-the-art sensors...</p>
+                <p>We equip your gym with our state-of-the-art sensors, ensuring seamless integration with existing equipment.</p>
             </div>
-            <!-- Additional steps... -->
+            <!-- Step 2: Data Collection -->
+            <div class="step">
+                <img src="data-collection-step.png" alt="Data Collection">
+                <p>Our sensors start collecting valuable workout data, turning every session into a source of rich insights.</p>
+            </div>
+            <!-- Step 3: Data Utilization -->
+            <div class="step">
+                <img src="data-utilization-step.png" alt="Data Utilization">
+                <p>Leverage the collected data to enhance user experience, improve equipment maintenance, and drive business decisions.</p>
+            </div>
         </div>
     </section>
 
@@ -96,7 +128,11 @@ Include quotes, results, and a before-and-after scenario to showcase the impact.
     <section class="technical-features">
         <ul>
             <li><img src="waterproof-icon.png" alt="Waterproof"> IP69 Waterproof Rating – Durable and reliable...</li>
-            <!-- Additional features... -->
+            <li><img src="connectivity-icon.png" alt="Connectivity"> 4G/5G Connectivity – For uninterrupted data transmission.</li>
+            <li><img src="battery-icon.png" alt="Battery"> Long Battery Life – Ensuring continuous operation.</li>
+            <li><img src="interface-icon.png" alt="Interface"> User-Friendly Interface – Easy to navigate for all age groups.</li>
+            <li><img src="security-icon.png" alt="Security"> Robust Data Security – Keeping user data safe and secure.</li>
+            <li><img src="compatibility-icon.png" alt="Compatibility"> Multi-Device Compatibility – Syncs effortlessly with various smart devices.</li>
         </ul>
     </section>
 

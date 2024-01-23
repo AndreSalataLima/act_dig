@@ -15,6 +15,8 @@
   <%= @sensor.time %>
 </p>
 
+<%= image_tag 'grafico_media.png', alt: 'Distance data for the serie' %>
+
 <%= link_to 'Edit Sensor', edit_user_session_exercise_sensor_path(@user, @session, @exercise, @sensor), class: "btn" %> |
 <%= link_to 'Back to Exercise', user_session_exercise_path(@user, @session, @exercise), class: "btn" %>
 
