@@ -1,0 +1,154 @@
+<%# To include yet
+
+# A titled section: "Join Our Growing Network of Partners".
+Three step process explained with cards:
+Installation: "We equip your gym with our state-of-the-art sensors, ensuring seamless integration with existing equipment."
+Data Collection: "Our sensors start collecting valuable workout data, turning every session into a source of rich insights."
+Data Utilization: "Leverage the collected data to enhance user experience, improve equipment maintenance, and drive business decisions."
+Each card contains an illustrative image showing the respective step.
+Technical Features Section:
+
+Six bullet points, each highlighting a key technical feature, like:
+"IP69 Waterproof Rating – Durable and reliable in all conditions."
+"4G/5G Connectivity – For uninterrupted data transmission."
+"Long Battery Life – Ensuring continuous operation."
+"User-Friendly Interface – Easy to navigate for all age groups."
+"Robust Data Security – Keeping user data safe and secure."
+"Multi-Device Compatibility – Syncs effortlessly with various smart devices."
+Accompanying icons or images for each feature.
+Success Story Banner:
+
+A testimonial or case study from a satisfied gym using the technology.
+Include quotes, results, and a before-and-after scenario to showcase the impact. %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Data Analytics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="social-media-icons">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Products & Services</a></li>
+                <li><a href="#partners">Partners</a></li>
+                <li><a href="#careers">Careers</a></li>
+                <li><%= link_to 'View Users', users_path %></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introductory Banner with Video -->
+    <section class="intro-banner">
+        <%= image_tag 'header_banner.png', alt: 'No data, no gain' %>
+        <%# <video autoplay loop muted>
+            <source src="gym-video.mp4" type="video/mp4">
+        </video> %>
+        <div class="banner-content">
+            <%# <h1>No Data, No Gain</h1> %>
+            <%# <p>In God We Trust. All Others Must Bring Data.</p> %>
+            <a href="#" class="cta-button">Become a Partner</a>
+            <a href="#" class="cta-button">Our Products</a>
+        </div>
+    </section>
+
+    <!-- Technology and Functionalities Section -->
+    <section id="services">
+        <h2>Revolutionizing Fitness with Data-Driven Technology</h2>
+        <p>Our cutting-edge sensor technology transforms every workout into a data-rich experience. Harness the power of real-time analytics to boost your fitness journey.</p>
+        <!-- Cards for Functionalities -->
+        <div class="cards">
+            <!-- Card 1: Rapid Installation -->
+            <div class="card">
+                <%= image_tag 'rapid-installation-v2.png', alt: 'Rapid Installation' %>
+                <h3>Rapid Installation</h3>
+                <p>Effortless set-up - Our sensors are designed for quick, hassle-free installation on any gym equipment.</p>
+            </div>
+            <!-- Card 2: Real-Time Performance Tracking -->
+            <div class="card">
+                <%= image_tag 'real-time-performance-tracking-v2.png', alt: 'Real-Time Performance Tracking' %>
+                <h3>Real-Time Performance Tracking</h3>
+                <p>Monitor your progress in real-time with precise metrics like speed, strength, and endurance.</p>
+            </div>
+            <!-- Card 3: Advanced Data Analytics -->
+            <div class="card">
+                <%= image_tag 'advanced-data-analytics-v2.png', alt: 'Advanced Data Analytics' %>
+                <h3>Advanced Data Analytics</h3>
+                <p>Unlock your potential with detailed analytics, providing insights into workout efficiency and improvement areas.</p>
+            </div>
+            <!-- Card 4: Customizable Workout Plans -->
+            <div class="card">
+                <%= image_tag 'customizable-workout-plans-v2.png', alt: 'Customizable Workout Plans' %>
+                <h3>Customizable Workout Plans</h3>
+                <p>Personalize your training with data-driven workout plans tailored to your fitness goals.</p>
+            </div>
+            <!-- Card 5: Community Challenges and Leaderboards -->
+            <div class="card">
+                <%= image_tag 'community-challenges-leaderboards-v2.png', alt: 'Community Challenges and Leaderboards' %>
+                <h3>Community Challenges and Leaderboards</h3>
+                <p>Stay motivated by joining community challenges and climbing up the leaderboards.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Opportunity Banner -->
+    <section id="partners">
+        <h2>Join Our Growing Network of Partners</h2>
+        <!-- Step cards -->
+        <div class="steps">
+            <!-- Step 1: Installation -->
+            <div class="step">
+                <%= image_tag 'installation-step.png', alt: 'Installation' %>
+                <p>We equip your gym with our state-of-the-art sensors, ensuring seamless integration with existing equipment.</p>
+            </div>
+            <!-- Step 2: Data Collection -->
+            <div class="step">
+                <%= image_tag 'data-collection-step.png', alt: 'Data Collection' %>
+                <p>Our sensors start collecting valuable workout data, turning every session into a source of rich insights.</p>
+            </div>
+            <!-- Step 3: Data Utilization -->
+            <div class="step">
+                <%= image_tag 'data-utilization-step.png', alt: 'Data Utilization' %>
+                <p>Leverage the collected data to enhance user experience, improve equipment maintenance, and drive business decisions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Features Section -->
+    <section class="technical-features">
+        <ul>
+            <li><%= image_tag 'waterproof-icon.png', alt: 'Waterproof' %> IP69 Waterproof Rating – Durable and reliable in all conditions.</li>
+            <li><%= image_tag 'connectivity-icon.png', alt: 'Connectivity' %> 4G/5G Connectivity – For uninterrupted data transmission.</li>
+            <li><%= image_tag 'battery-icon.png', alt: 'Battery' %> Long Battery Life – Ensuring continuous operation.</li>
+            <li><%= image_tag 'interface-icon.png', alt: 'Interface' %> User-Friendly Interface – Easy to navigate for all age groups.</li>
+            <li><%= image_tag 'security-icon.png', alt: 'Security' %> Robust Data Security – Keeping user data safe and secure.</li>
+            <li><%= image_tag 'compatibility-icon.png', alt: 'Compatibility' %> Multi-Device Compatibility – Syncs effortlessly with various smart devices.</li>
+        </ul>
+    </section>
+
+    <!-- Success Story Banner -->
+    <section class="success-story">
+        <blockquote>
+            <p>"Our gym's experience with these sensors has been transformative..."</p>
+            <footer>– Gym Owner</footer>
+        </blockquote>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Company's CNPJ: 123456789</p>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <img src="company-logo.png" alt="Company Logo">
+    </footer>
+</body>
+</html>
