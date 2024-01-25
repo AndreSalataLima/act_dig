@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   # Non-nested routes
   get 'pages/home'
+  get 'pages/gym'
   get 'session_histories/index'
   get 'session_histories/show'
   get 'sensors/show'
