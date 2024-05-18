@@ -3,11 +3,14 @@ Rails.application.routes.draw do
 
   # Non-nested routes
   get 'pages/home'
-  get 'pages/gym'
+  get 'pages/dashboard'
+  get 'pages/home2'
+  get 'pages/landing_page'
   get 'session_histories/index'
   get 'session_histories/show'
   get 'sensors/show'
   get 'sensors/edit'
+  get 'pages/index'
 
   # Nested routes for users, sessions, exercises
   resources :users do

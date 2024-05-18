@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="Bootstrap, Landing page, Template, Business, Service">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Grayrids">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <title>Action Digital - Laser Meter</title>
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="<%= asset_path '2.png' %>" type="image/png">
+    <%= stylesheet_link_tag 'bootstrap.min', 'animate', 'LineIcons', 'owl.carousel', 'owl.theme', 'magnific-popup', 'nivo-lightbox', 'main', 'responsive', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+
+    <!-- Header Section Start -->
+    <header id="home" class="hero-area">
+      <div class="overlay">
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
+        <div class="container">
+          <%= link_to image_tag('logo.png', alt: 'Logo'), root_path, class: 'navbar-brand' %>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="lni-menu"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#about">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#features">Funcionalidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#showcase">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#pricing">Preços</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#team">Equipe</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#contact">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-singin" href="#">Download</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row space-100">
+          <div class="col-lg-6 col-md-12 col-xs-12">
+            <div class="contents">
+              <h2 class="head-title">No data, no gain</h2>
+              <p>Nossa tecnologia de sensores de ponta transforma cada treino em uma experiência rica em dados. Aproveite o poder da análise em tempo real para impulsionar sua jornada de fitness.</p>
+              <div class="header-button">
+                <a href="#" class="btn btn-border-filled">Saiba mais</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-xs-12 p-0">
+            <div class="intro-img">
+              <%= image_tag 'intro.png', alt: 'Intro Image' %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-header text-center">
+              <h2 class="section-title">Revolucionando o Fitness com Tecnologia Orientada por Dados</h2>
+              <p class="section-subtitle">Nossa tecnologia de sensores de ponta transforma cada treino em uma experiência rica em dados. Aproveite o poder da análise em tempo real para impulsionar sua jornada de fitness.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Start Col -->
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="services-item text-center">
+              <div class="icon">
+                <i class="lni-cog"></i>
+              </div>
+              <h4>Instalação Rápida</h4>
+              <p>Configuração sem esforço - Nossos sensores são projetados para instalação rápida e fácil em qualquer equipamento de ginástica.</p>
+            </div>
+          </div>
+          <!-- End Col -->
+          <!-- Start Col -->
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="services-item text-center">
+              <div class="icon">
+                <i class="lni-brush"></i>
+              </div>
+              <h4>Monitoramento de Desempenho em Tempo Real</h4>
+              <p>Monitore seu progresso em tempo real com métricas precisas como velocidade, força e resistência.</p>
+            </div>
+          </div>
+          <!-- End Col -->
+          <!-- Start Col -->
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="services-item text-center">
+              <div class="icon">
+                <i class="lni-heart"></i>
+              </div>
+              <h4>Análise Avançada de Dados</h4>
+              <p>Libere seu potencial com análises detalhadas, fornecendo insights sobre a eficiência do treino e áreas de melhoria.</p>
+            </div>
+          </div>
+          <!-- End Col -->
+          <!-- Start Col -->
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="services-item text-center">
+              <div class="icon">
+                <i class="lni-heart"></i>
+              </div>
+              <h4>Planos de Treino Personalizáveis</h4>
+              <p>Personalize seu treinamento com planos de treino orientados por dados, adaptados aos seus objetivos de fitness.</p>
+            </div>
+          </div>
+          <!-- End Col -->
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Promo Section Start -->
+    <section id="promo" class="section bg-light">
+      <div class="container">
+        <div class="row">
+          <!-- Start Col -->
+          <div class="col-lg-6 col-md-12">
+            <div class="promo-item">
+              <h3>Junte-se à Nossa Crescente Rede de Parceiros</h3>
+              <p>Nosso processo começa equipando sua academia com sensores de última geração para integração perfeita com os equipamentos existentes. Uma vez instalados, esses sensores coletam dados valiosos de treino, transformando cada sessão em uma rica fonte de insights. Esses dados são então utilizados para melhorar as experiências dos usuários, a manutenção dos equipamentos e informar decisões estratégicas de negócios.</p>
+              <a class="btn btn-common" href="#showcase">Veja Nossos Produtos</a>
+            </div>
+          </div>
+          <!-- End Col -->
+          <!-- Start Col -->
+          <div class="col-lg-6 col-md-12">
+            <div class="promo-item-img">
+              <%= image_tag 'installation-datacollection-data-utilization.png', class: 'img-fluid', alt: 'Instalação, Coleta de Dados, Utilização de Dados' %>
+            </div>
+          </div>
+          <!-- End Col -->
+        </div>
+      </div>
+    </section>
+    <!-- Promo Section End -->
+
+    <!-- Statistics Section Start -->
+    <section id="statistics" class="section bg-dark text-light">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="stat-item">
+              <h2>14+</h2>
+              <p>Parceiros</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="stat-item">
+              <h2>55+</h2>
+              <p>Projetos Realizados</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="stat-item">
+              <h2>89+</h2>
+              <p>Clientes Satisfeitos</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="stat-item">
+              <h2>150+</h2>
+              <p>Reuniões</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Statistics Section End -->
+
+    <!-- Features Section Start -->
+    <section id="features" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-header text-center">
+              <h2 class="section-title">Explore Nossas Funcionalidades Técnicas Avançadas</h2>
+              <p class="section-subtitle">Nossas inovações técnicas são projetadas para mantê-lo conectado, seguro e à frente na jornada de fitness</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Start Col -->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="features-item text-center">
+              <div class="icon">
+                <i class="lni-shield"></i>
+              </div>
+              <h4>Classificação IP69</h4>
+              <p>Durável e confiável em todas as condições.</p>
+            </div>
+          </div>
+          <!-- End Col -->
+          <!-- Start Col -->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="features-item text-center">
+              <div class="icon">
+                <i class="lni-network"></i>
+              </div>
+              <h4>Conectividade 4G/5G</h4>
+              <p>Para transmissão de dados ininterrupta.</p>
+            </div>
+          </div>
+          <!-- End Col -->
+          <!-- Start Col -->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="features-item text-center">
+              <div class="icon">
+                <i class="lni-battery"></i>
+              </div>
+              <h4>Longa Vida Útil da Bateria</h4>
+              <p>Garantindo operação contínua.</p>
+            </div>
+          </div>
+          <!-- End Col -->
+          <!-- Start Col -->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="features-item text-center">
+              <div class="icon">
+                <i class="lni-display"></i>
+              </div>
+              <h4>Interface Amigável</h4>
+              <p>Fácil de navegar para todas as idades.</p>
+            </div>
+          </div>
+          <!-- End Col -->
+          <!-- Start Col -->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="features-item text-center">
+              <div class="icon">
+                <i class="lni-lock"></i>
+              </div>
+              <h4>Segurança Robusta de Dados</h4>
+              <p>Mantendo os dados do usuário seguros.</p>
+            </div>
+          </div>
+          <!-- End Col -->
+          <!-- Start Col -->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="features-item text-center">
+              <div class="icon">
+                <i class="lni-devices"></i>
+              </div>
+              <h4>Compatibilidade Multi-Dispositivo</h4>
+              <p>Sincroniza facilmente com vários dispositivos inteligentes.</p>
+            </div>
+          </div>
+          <!-- End Col -->
+        </div>
+      </div>
+    </section>
+    <!-- Features Section End -->
+
+    <!-- Team Section Start -->
+    <section id="team" class="section bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-header text-center">
+              <h2 class="section-title">Membros da Equipe</h2>
+              <p class="section-subtitle">Conheça a equipe por trás do nosso sucesso.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Start Col -->
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="team-item text-center">
+              <div class="team-img">
+                <img class="img-fluid" src="<%= asset_path 'gym-owner.png' %>" alt="André Salata">
+                <div class="team-overlay">
+                  <div class="overlay-social-icon text-center">
+                    <ul class="social-icons">
+                      <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
+                      <li><a href="#"><i class="lni-twitter-filled"></i></a></li>
+                      <li><a href="#"><i class="lni-linkedin-filled"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="info-text">
+                <h3><a href="#">André Salata</a></h3>
+                <p>Responsável por tecnologia e desenvolvimento, também atuando como Product Owner.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Col -->
+          <!-- Start Col -->
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="team-item text-center">
+              <div class="team-img">
+                <img class="img-fluid" src="<%= asset_path 'gym-owner.png' %>" alt="Pedro Augusto Olimpio de Carvalho">
+                <div class="team-overlay">
+                  <div class="overlay-social-icon text-center">
+                    <ul class="social-icons">
+                      <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
+                      <li><a href="#"><i class="lni-twitter-filled"></i></a></li>
+                      <li><a href="#"><i class="lni-linkedin-filled"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="info-text">
+                <h3><a href="#">Pedro Augusto Olimpio de Carvalho</a></h3>
+                <p>Inventor do hardware e responsável pela busca de financiamento através de editais públicos e contato com a universidade.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Col -->
+          <!-- Start Col -->
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="team-item text-center">
+              <div class="team-img">
+                <img class="img-fluid" src="<%= asset_path 'gym-owner.png' %>" alt="Mateus">
+                <div class="team-overlay">
+                  <div class="overlay-social-icon text-center">
+                    <ul class="social-icons">
+                      <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
+                      <li><a href="#"><i class="lni-twitter-filled"></i></a></li>
+                      <li><a href="#"><i class="lni-linkedin-filled"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="info-text">
+                <h3><a href="#">Mateus</a></h3>
+                <p>Empreendedor e responsável pelo desenvolvimento do produto e relacionamento com academias.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Col -->
+        </div>
+      </div>
+    </section>
+    <!-- Team Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="contact-text section-header text-center">
+              <div>
+                <h2 class="section-title">CONTATO</h2>
+                <div class="desc-text">
+                  <p>Vamos entrar em contato. Envie-nos uma mensagem:</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Start Col -->
+          <div class="col-lg-6 col-md-12">
+            <div class="contact-form">
+              <form>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12 col-xs-12">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Nome" required>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-xs-12">
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-xs-12">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="subject" name="subject" placeholder="Assunto" required>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-xs-12">
+                    <div class="form-group">
+                      <textarea class="form-control" id="message" name="message" rows="6" placeholder="Mensagem" required></textarea>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-xs-12">
+                    <div class="form-group text-center">
+                      <button type="submit" class="btn btn-common btn-effect">Enviar</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- End Col -->
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Copyright Section Start -->
+    <div class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="site-info text-center">
+              <p>&copy; 2024 - Todos os Direitos Reservados.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright Section End -->
+
+    <!-- Go to Top Link -->
+    <a href="#" class="back-to-top">
+      <i class="lni-chevron-up"></i>
+    </a>
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="sk-circle">
+        <div class="sk-circle1 sk-child"></div>
+        <div class="sk-circle2 sk-child"></div>
+        <div class="sk-circle3 sk-child"></div>
+        <div class="sk-circle4 sk-child"></div>
+        <div class="sk-circle5 sk-child"></div>
+        <div class="sk-circle6 sk-child"></div>
+        <div class="sk-circle7 sk-child"></div>
+        <div class="sk-circle8 sk-child"></div>
+        <div class="sk-circle9 sk-child"></div>
+        <div class="sk-circle10 sk-child"></div>
+        <div class="sk-circle11 sk-child"></div>
+        <div class="sk-circle12 sk-child"></div>
+      </div>
+    </div>
+    <!-- End Preloader -->
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <%= javascript_include_tag 'jquery-min', 'popper.min', 'bootstrap.min', 'owl.carousel', 'jquery.nav', 'scrolling-nav', 'jquery.easing.min', 'nivo-lightbox', 'jquery.magnific-popup.min', 'form-validator.min', 'contact-form-script', 'main', 'data-turbolinks-track': 'reload' %>
+
+  </body>
+</html>
