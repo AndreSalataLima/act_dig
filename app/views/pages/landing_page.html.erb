@@ -26,6 +26,11 @@
       </div>
       <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
         <div class="container">
+          <a href="#" class="navbar-brand"><%= image_tag 'logo_banner.png', alt: 'Logo' %></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="lni-menu"></i>
+          </button>
+        <div class="container">
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto w-100 justify-content-end">
               <li class="nav-item">
@@ -407,48 +412,60 @@
           <!-- End Row -->
     </section>
     <!-- Contact Us Section End -->
-
-    <!-- Footer Section Start -->
-    <footer id="footer">
-      <!-- Footer Area Start -->
-      <section id="footer-Content">
-        <div class="container">
-          <!-- Start Row -->
-          <div class="row">
-            <!-- Start Col -->
-            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 col-mb-12">
-              <div class="widget">
-                <h3 class="block-title">Action Digital</h3>
-                <ul class="menu">
-                  <li><a href="#">CNPJ</a></li>
-                  <li><a href="#">TELEFONE</a></li>
-                </ul>
-              </div>
+<!-- Footer Section Start -->
+  <footer id="footer">
+    <!-- Footer Area Start -->
+    <section id="footer-Content">
+      <div class="container">
+        <!-- Start Row -->
+        <div class="row justify-content-center text-center">
+          <!-- Start Col -->
+          <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+            <div class="widget">
+              <!-- Add text if needed -->
             </div>
-            <!-- End Col -->
           </div>
+          <!-- End Col -->
+          <!-- Start Col -->
+          <div class="col-lg-8 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+            <div class="widget block-content">
+              <p class="block-title">51.014.489/0001-91</p>
+              <p class="block-title">mateus.saad2@gmail.com</p>
+              <p>(44) 9970-7380 <a href="https://api.whatsapp.com/send?phone=+554499707380"><i class="fa-brands fa-whatsapp whatsapp-icon" style="color: #24cc63;"></i>
+                </a></i>
+              </p>
+            </div>
+          </div>
+          <!-- End Col -->
+          <!-- Start Col -->
+          <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+            <div class="widget">
+              <!-- Add your logo here -->
+              <%= image_tag 'defaut_trans_165x85.png', alt: 'Logo', class: 'footer-logo' %>
+            </div>
+          </div>
+          <!-- End Col -->
         </div>
-      </section>
-      <!-- Footer Area End -->
-      <!-- Copyright Section Start -->
-      <div class="site-info text-center">
-        <p>&copy; 2024 - Todos os Direitos Reservados.</p>
+        <!-- End Row -->
       </div>
-      <!-- Copyright Section End -->
-    </footer>
-    <!-- Go to Top Link -->
-    <a href="#" class="back-to-top">
-      <i class="lni-chevron-up"></i>
-    </a>
-
-    <!-- Preloader -->
-    <div id="preloader">
-      <div class="loader" id="loader-1"></div>
+    </section>
+    <!-- Footer Area End -->
+    <!-- Copyright Section Start -->
+    <div class="site-info text-center">
+      <p>&copy; 2024 - Todos os Direitos Reservados.</p>
     </div>
-    <!-- End Preloader -->
-
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <%= javascript_include_tag 'jquery-min', 'popper.min', 'bootstrap.min', 'owl.carousel', 'jquery.nav', 'scrolling-nav', 'jquery.easing.min', 'nivo-lightbox', 'jquery.magnific-popup.min', 'form-validator.min', 'contact-form-script', 'whatsappfromforms', 'main', 'data-turbolinks-track': 'reload' %>
-
+    <!-- Copyright Section End -->
+  </footer>
+  <!-- Go to Top Link -->
+  <a href="#" class="back-to-top">
+    <i class="lni-chevron-up"></i>
+  </a>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader" id="loader-1"></div>
+  </div>
+  <!-- End Preloader -->
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+  <%= javascript_include_tag 'jquery-min', 'popper.min', 'bootstrap.min', 'owl.carousel', 'jquery.nav', 'scrolling-nav', 'jquery.easing.min', 'nivo-lightbox', 'jquery.magnific-popup.min', 'form-validator.min', 'contact-form-script', 'whatsappfromforms', 'main', 'data-turbolinks-track': 'reload' %>
   </body>
 </html>

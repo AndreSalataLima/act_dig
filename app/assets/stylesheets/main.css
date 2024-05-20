@@ -1394,7 +1394,7 @@ button:focus {
     padding: 2px !important; }
 
    #footer-Content {
-  padding-top: 60px;
+  padding: 30px 0 20px 0;
   background: #180e29; }
   #footer-Content .footer-logo img {
     padding-top: 70px; }
