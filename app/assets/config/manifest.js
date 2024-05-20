@@ -15,4 +15,5 @@
 //= link jquery.magnific-popup.min.js
 //= link form-validator.min.js
 //= link contact-form-script.js
+//= link whatsappfromforms.js
 //= link main.js
