@@ -583,6 +583,10 @@ button:focus {
       font-size: 16px;
       margin-bottom: 20px; }
 
+      #business-plan .img-fluid {
+        max-width: 107%;
+      }
+
 /* ==========================================================================
    Features
    ========================================================================== */
@@ -1075,7 +1079,7 @@ button:focus {
     -webkit-transition: all .8s ease;
     transition: all .8s ease; }
   #team .single-team .team-details {
-    padding: 45px 0px 30px 0px;
+    padding: 35px 0px 20px 0px;
     position: relative; }
     #team .single-team .team-details h5.team-title {
       font-size: 16px;

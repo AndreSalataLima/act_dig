@@ -43,7 +43,7 @@
     font-size: 13px;
     margin-bottom: 20px; }
   .section {
-    padding: 80px 0px; }
+    padding: 80px 0px 1px; }
   #business-plan {
     padding-bottom: 80px; }
   .feature-info {
@@ -157,12 +157,27 @@
     background: #191c1e; }
   .navbar-expand-md .navbar-brand, .navbar-expand-md .navbar-toggler {
     margin: 6px 15px; }
+  h4 {
+    text-align: center;
+    margin-left: 25px; }
+  #section-subtitle p {
+    text-align: center; }
   .bg-inverse {
     background: #191c1e; }
   .navbar {
     padding: 0; }
   .navbar-brand img {
-    width: 100px; } }
+    width: 100px; }
+  #business-plan .img-fluid {
+    max-width: 115%;
+  }
+  #features .feature-item .feature-icon {
+    left: 35%;
+  }
+  #features .feature-item p {
+    text-align: center;
+    margin-left: 25px;}
+}
 
 @media (min-width: 320px) and (max-width: 480px) {
   .bg-inverse {
@@ -184,7 +199,7 @@
     line-height: 35px;
     margin-bottom: 10px; }
   .hero-area .contents {
-    padding: 200px 0 50px; }
+    padding: 190px 0 100px; }
   .hero-area .contents p {
     color: #fff;
     font-size: 14px;
@@ -208,7 +223,7 @@
   .hero-area .intro-img {
     padding: 30px 0 0px; }
   .section {
-    padding: 70px 0px; }
+    padding: 70px 0px 1px; }
   #services .services-item {
     padding: 30px 15px;
     margin-bottom: 15px; }
@@ -398,7 +413,7 @@
     padding-bottom: 100px;
     padding-top: 100px; }
   .section {
-    padding: 100px 0px; }
+    padding: 100px 0px 1px; }
   .feature-info {
     width: 80%; }
   .feature-info {
